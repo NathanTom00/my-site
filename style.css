@@ -1,0 +1,83 @@
+html,
+body {
+  height: 100%;
+}
+
+.wrapper {
+  min-height: 100%;
+
+  /* flex */
+  display: flex;
+  flex-direction: column;
+}
+
+.wrapper main {
+  flex: 1 1 auto;
+}
+
+.nav-link {
+  transition: 0.8s;
+}
+.nav-link:hover {
+  background-color: #cccac9;
+}
+
+.list-group-item.active {
+  background-color: #cccac9;
+  border-color: #cccac9;
+}
+
+dd {
+  margin-left: 0.5rem;
+}
+
+.dd-imm {
+  max-width: 200px;
+  height: auto;
+}
+
+.scrollable-container{
+    direction: rtl;
+}
+
+.content{
+    direction:ltr;
+}
+
+.lista-progetti dt{
+  font-size: xx-large;
+  border-bottom: 2px solid #cccac9;
+}
+
+.lista-progetti a dd{
+  padding: 10px 0 10px 10px;
+}
+
+.lista-progetti a dd:hover{
+  background-color: #dbdad969;
+}
+
+.lista-progetti a{
+  text-decoration: none;
+  color: black;
+  font-size: large;
+}
+
+@media only screen and (max-width: 600px) {
+  .presentation-paragraph {
+    text-align: center;
+  }
+
+  .scrollable-container{
+    direction: initial;
+  }
+
+  .lista-progetti dt{
+    padding-top: 20px;
+    width: 85%;
+  }
+
+  .container-imm{
+    margin-top: 2rem;
+  }
+}
